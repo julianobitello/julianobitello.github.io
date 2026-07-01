@@ -35,14 +35,13 @@ export function Projects() {
               transition={{ duration: 0.35 }}
               className="card-elevated card-elevated-hover group overflow-hidden"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-video overflow-hidden bg-white">
                 <img
                   src={p.imagem}
                   alt={p.titulo}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent opacity-80" />
               </div>
               <div className="p-5">
                 <h3 className="font-display text-xl font-semibold">{p.titulo}</h3>

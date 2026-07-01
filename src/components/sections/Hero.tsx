@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Download, Github, Linkedin, Mail, FolderGit2 } from "lucide-react";
 import { Particles } from "@/components/Particles";
 import { contato } from "@/data/portfolio";
+import profilePhoto from "@/assets/eu.png";
 
 export function Hero() {
   return (
@@ -94,7 +95,7 @@ export function Hero() {
           >
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-card">
               <img
-                src="/src/assets/eu.png"
+                src={profilePhoto}
                 alt="Foto de Juliano Bitello"
                 className="h-full w-full object-cover"
               />
