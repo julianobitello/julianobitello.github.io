@@ -1,9 +1,4 @@
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
-import project6 from "@/assets/project-6.jpg";
+import projectManagementSystem from "@/assets/project-management-system.png";
 
 export type ProjectCategory = "React" | "JavaScript" | "TypeScript";
 
@@ -11,74 +6,23 @@ export interface Project {
   titulo: string;
   descricao: string;
   imagem: string;
-  github: string;
+  github?: string;
   demo: string;
   tecnologias: ProjectCategory[];
   tags: string[];
 }
 
-// TODO: Substituir pelos projetos reais do Juliano
 export const projects: Project[] = [
   {
-    titulo: "Landing Page Corporativa",
+    titulo: "Project Management System",
     descricao:
-      "Landing page responsiva com foco em conversão, animações suaves e performance otimizada.",
-    imagem: project1,
-    github: "https://github.com/julianobitello",
-    demo: "https://example.com",
+      "Sistema de gerenciamento de projetos com interface web para organizar tarefas, acompanhar demandas e visualizar o andamento do trabalho.",
+    imagem: projectManagementSystem,
+    demo: "https://project-management-system-pi-five.vercel.app/",
     tecnologias: ["React", "TypeScript"],
-    tags: ["Landing", "Responsivo"],
-  },
-  {
-    titulo: "Dashboard Administrativo",
-    descricao:
-      "Painel de controle com gráficos interativos, filtros dinâmicos e integração com API REST.",
-    imagem: project2,
-    github: "https://github.com/julianobitello",
-    demo: "https://example.com",
-    tecnologias: ["React", "TypeScript"],
-    tags: ["Dashboard", "API"],
-  },
-  {
-    titulo: "Sistema de Gestão",
-    descricao: "Aplicação web completa em Angular com formulários complexos e validação avançada.",
-    imagem: project3,
-    github: "https://github.com/julianobitello",
-    demo: "https://example.com",
-    tecnologias: ["TypeScript"],
-    tags: ["SPA"],
-  },
-  {
-    titulo: "App de Tarefas",
-    descricao:
-      "Aplicativo de gestão de tarefas com drag and drop, persistência local e tema escuro.",
-    imagem: project4,
-    github: "https://github.com/julianobitello",
-    demo: "https://example.com",
-    tecnologias: ["React", "JavaScript"],
-    tags: ["UX", "Produtividade"],
-  },
-  {
-    titulo: "Portfólio Interativo",
-    descricao: "Site portfólio com animações em Framer Motion, scroll reveal e design premium.",
-    imagem: project5,
-    github: "https://github.com/julianobitello",
-    demo: "https://example.com",
-    tecnologias: ["React", "TypeScript"],
-    tags: ["Portfólio", "Motion"],
-  },
-  {
-    titulo: "E-commerce Front-End",
-    descricao: "Interface de loja virtual com carrinho persistente, filtros e checkout responsivo.",
-    imagem: project6,
-    github: "https://github.com/julianobitello",
-    demo: "https://example.com",
-    tecnologias: ["React", "JavaScript"],
-    tags: ["E-commerce", "UI"],
+    tags: ["Gestao", "Produtividade"],
   },
 ];
-
-export const filters = ["Todos", "React", "Angular", "JavaScript", "TypeScript"] as const;
 
 export interface ExperienceItem {
   cargo: string;
