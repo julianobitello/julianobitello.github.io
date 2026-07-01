@@ -1,23 +1,30 @@
 import { motion } from "framer-motion";
 import {
-  SiReact, SiTypescript, SiJavascript, SiHtml5, SiCss, SiTailwindcss,
-  SiAngular, SiJquery, SiGit, SiGithub, SiVite, SiAxios,
+  SiReact,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss,
+  SiTailwindcss,
+  SiAngular,
+  SiJquery,
+  SiGit,
+  SiGithub,
+  SiVite,
+  SiAxios,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 
 const techs: { name: string; icon: IconType; color: string; level: number }[] = [
-  { name: "React", icon: SiReact, color: "#61DAFB", level: 92 },
-  { name: "TypeScript", icon: SiTypescript, color: "#3178C6", level: 80 },
-  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 95 },
-  { name: "HTML5", icon: SiHtml5, color: "#E34F26", level: 98 },
+  { name: "React", icon: SiReact, color: "#61DAFB", level: 70 },
+  { name: "TypeScript", icon: SiTypescript, color: "#3178C6", level: 50 },
+  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 85 },
+  { name: "HTML5", icon: SiHtml5, color: "#E34F26", level: 95 },
   { name: "CSS3", icon: SiCss, color: "#1572B6", level: 95 },
-  { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8", level: 88 },
-  { name: "Angular", icon: SiAngular, color: "#DD0031", level: 70 },
-  { name: "JQuery", icon: SiJquery, color: "#0769AD", level: 85 },
+  { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8", level: 50 },
   { name: "Git", icon: SiGit, color: "#F05032", level: 90 },
   { name: "GitHub", icon: SiGithub, color: "#FFFFFF", level: 90 },
-  { name: "Vite", icon: SiVite, color: "#B73BFE", level: 82 },
-  { name: "Axios", icon: SiAxios, color: "#5A29E4", level: 85 },
+  { name: "Axios", icon: SiAxios, color: "#5A29E4", level: 70 },
 ];
 
 export function Stack() {
@@ -31,9 +38,7 @@ export function Stack() {
           transition={{ duration: 0.5 }}
           className="mb-12 text-center"
         >
-          <span className="text-sm font-medium uppercase tracking-widest text-primary">
-            Stack
-          </span>
+          <span className="text-sm font-medium uppercase tracking-widest text-primary">Stack</span>
           <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">
             Tecnologias que <span className="gradient-text">domino</span>
           </h2>
@@ -57,9 +62,7 @@ export function Stack() {
                   style={{ color: t.color }}
                   className="transition-transform duration-300 group-hover:scale-110"
                 />
-                <span className="text-sm font-medium text-foreground/90">
-                  {t.name}
-                </span>
+                <span className="text-sm font-medium text-foreground/90">{t.name}</span>
                 <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/5">
                   <motion.div
                     initial={{ width: 0 }}
